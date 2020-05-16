@@ -2,11 +2,10 @@
 namespace xtakumatutix\reaction\Reaction;
 
 use pocketmine\Player;
-use xtakumatutix\reaction\Reaction\Good;
 
-class ActionForm
+class Good
 {
-    public function particle(Player $player): void
+    public static function particle(Player $player): void
     {
         $player->sendMessage("ああああああ");
     }

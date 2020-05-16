@@ -15,7 +15,7 @@ class ActionForm implements Form
 
         switch ($data) {
             case 0:
-            $player->sendClass(new Good());
+            Good::particle($player);
         }
     }
 

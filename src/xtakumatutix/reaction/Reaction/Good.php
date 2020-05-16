@@ -5,7 +5,7 @@ use pocketmine\Player;
 
 class Good
 {
-    public function particle(Player $player): void
+    public static function particle(Player $player): void
     {
         $player->sendMessage("ああああああ");
     }

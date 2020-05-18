@@ -4,6 +4,7 @@ namespace xtakumatutix\reaction\Form;
 use pocketmine\form\Form;
 use pocketmine\Player;
 use xtakumatutix\reaction\Reaction\Good;
+use xtakumatutix\reaction\Reaction\Bad;
 
 class ActionForm implements Form
 {
@@ -16,6 +17,9 @@ class ActionForm implements Form
         switch ($data) {
             case 0:
             Good::particle($player);
+
+            case 1:
+            Bad::particle($player);
         }
     }
 
@@ -27,7 +31,10 @@ class ActionForm implements Form
             'content' => 'ボタンを押してリアクションしましょう',
             'buttons' => [
                 [
-                    'text' => 'Good',
+                    'text' => 'Good'
+                ],
+                [
+                    'text' => 'Bad'
                 ]
             ],
         ];

@@ -10,7 +10,7 @@ use pocketmine\scheduler\ClosureTask;
 use pocketmine\Server;
 
 
-class Good
+class Bad
 {
     public static function particle(Player $player): void
     {
@@ -31,7 +31,7 @@ class Good
                 break;
             }
         $level = $player->getLevel();
-        $particle = new FloatingTextParticle($pos, "いいね！！", "§l§eGood!!");
+        $particle = new FloatingTextParticle($pos, "う～ん？", "§l§bBad...");
         $level->addParticle($particle);
 
         $task = new ClosureTask(function (int $currentTick) use ($particle, $level): void {

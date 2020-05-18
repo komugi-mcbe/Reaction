@@ -8,6 +8,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use xtakumatutix\reaction\Form\ActionForm;
 use xtakumatutix\reaction\Reaction\Good;
+use xtakumatutix\reaction\Reaction\Bad;
 
 Class Main extends PluginBase 
 {

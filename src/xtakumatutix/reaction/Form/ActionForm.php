@@ -17,9 +17,11 @@ class ActionForm implements Form
         switch ($data) {
             case 0:
             Good::particle($player);
+            break;
 
             case 1:
             Bad::particle($player);
+            break;
         }
     }
 
